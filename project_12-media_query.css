@@ -215,6 +215,7 @@ main .section_4 h1,p{text-align: center;color: #000;font-weight: bold;width: 95%
 main .section_4 p{margin-top: 15px;}
             /* star container */
 main .section_4 .container{width: calc(156.8px * 6);margin: 40px auto 0px auto;margin-top: 40px;margin-top: 60px;overflow: hidden;}
+/* main .section_4 .container:hover .icons{animation: 0s  0s forwards ;} */
 main .section_4 .container .icons{display: flex;justify-content: space-evenly;width: 1423px;animation:moving 5s  3s forwards infinite;margin-left: 0px;}
 main .section_4 .container .icons a{color: rgb(37, 37, 37);font-size: 7em;width: 1.4em;}
 main .section_4 .container .icons a:hover{color: var(--color);}
