@@ -209,3 +209,39 @@ main .section_3 .container .contents:hover a{color: #fff;}
     main > .section_3 .container .contents .content{text-align: center;}
 }
         /* end section_3 */
+        /* start section_4 */
+main .section_4{width: 100%; padding: 40px 0px;}
+main .section_4 h1,p{text-align: center;color: #000;font-weight: bold;width: 95%;margin: auto;}
+main .section_4 p{margin-top: 15px;}
+            /* star container */
+main .section_4 .container{width: calc(156.8px * 6);margin: 40px auto 0px auto;margin-top: 40px;margin-top: 60px;overflow: hidden;}
+main .section_4 .container .icons{display: flex;justify-content: space-evenly;width: 1423px;animation:moving 5s  3s forwards infinite;margin-left: 0px;}
+main .section_4 .container .icons a{color: rgb(37, 37, 37);font-size: 7em;width: 1.4em;}
+main .section_4 .container .icons a:hover{color: var(--color);}
+@keyframes moving{
+    25%{
+        margin-left: -156.8px;
+    }
+    50%{
+        margin-left:-313.6px;
+    }
+    75%{
+        margin-left:-470.8px;
+    }
+}  
+@media(min-width:280px) and (max-width:1000px){
+    main .section_4 .container{width: 85%;margin: 40px auto 0px auto;}
+    main .section_4 .container .icons{width: 100%;justify-content: center;flex-wrap: wrap;animation: 0s  0s forwards;animation-iteration-count: 0;}
+    @keyframes moving{
+        25%{
+            margin-left: 0px;
+        }
+        50%{
+            margin-left:0px;
+        }   
+        75%{
+            margin-left:0px;
+        } 
+    }  
+}
+        /* end section_4 */
