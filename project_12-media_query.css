@@ -42,7 +42,10 @@ body > input[id="check_navbar"]:checked + .header_top .nav_bar .container > .lis
 .header_top .nav_bar .container > .list > li:nth-child(6):hover .contents{display: block;}
 .header_top .nav_bar .container > .list > li:nth-child(6) > .contents a{display:block;font-weight: bold;color: rgb(112, 112, 112);font-size: 19px;transition: color .5s;-webkit-text-stroke: 1px rgb(43, 43, 43);margin: 10px 0px;}
 .header_top .nav_bar .container > .list > li:nth-child(6) > .contents a:hover{color:var(--color);}
-            /* lilast-child */
+            /* li:nth-child(7) */
+.header_top .nav_bar .container > .list > li:nth-child(7) a{position: relative;}            
+.header_top .nav_bar .container > .list > li:nth-child(7) a::after{content: '0';padding: 2px;background-color: var(--color);color: #fff;position: relative;left: 2px;top: -12px;border-radius: 8px;-webkit-text-stroke: 0.6px black;font-size: 16px;display: inline-block;}
+            /* li last-child */
 .header_top .nav_bar > .list > li:last-child a{margin-right:0px;padding-right:0px;}
             /* animation >> logo */
 @keyframes stroke_logo{
@@ -131,7 +134,7 @@ body > input[id="check_navbar"]:checked + .header_top .nav_bar .container > .lis
         /*end slider media_query*/
 /*=== end header ===*/
 /*=== end main ===*/
-        /* start section_1 */
+    /* start section_1 */
 main .section_1{width: 100%; padding: 40px 0px;} 
 main .section_1 .container{width: 85%;margin: auto;}        
 main .section_1 .container h1,p{color: black;text-align: center;}
@@ -146,8 +149,8 @@ main .section_1 .container .forms .form .pop_up > .content h3,a{color: #fff;font
 main .section_1 .container .forms .form .pop_up .content h3{padding: 5px;background-color: rgba(0, 0, 0, 0.61);border-radius: 25px;margin-bottom: 5px;}
 main .section_1 .container .forms .form:hover .pop_up{background-color: rgba(0, 0, 0, 0.089);}
 main .section_1 .container .forms .form:hover .pop_up .content a{color: var(--color);}
-        /* end section_1 */
-        /* start section_2 */
+    /* end section_1 */
+    /* start section_2 */
 main .section_2{width: 100%; padding: 40px 0px;} 
 main .section_2 .container{width: 85%;margin: auto;}        
 main .section_2 .container h1,p{color: black;text-align: center;}
@@ -169,8 +172,8 @@ main .section_2 .container .forms .form h5{text-align: center;font-weight: bold;
 main .section_2 .container .forms .form p{text-align: center;}
 main .section_2 .container .forms .form p .sp_1{color: rgb(255, 72, 72);font-size: 18px;}
 main .section_2 .container .forms .form p .sp_2{color: grey;text-decoration:line-through}
-        /* end section_2 */
-        /* start section_3 */
+    /* end section_2 */
+    /* start section_3 */
 main .section_3{width: 100%; padding: 40px 0px;}
 main .section_3 .container{width: 85%;margin: auto;display: flex;justify-content: center;flex-wrap: wrap;} 
 main .section_3 .container .contents{width: 497px; display: flex;justify-content: center;align-items: center;flex-wrap: wrap; padding: 30px 0px;margin: 15px;position: relative;overflow: hidden; border-radius: 10px;border:1.5px solid black;}
@@ -191,6 +194,7 @@ main > .section_3 .container .contents .content a{color: #000;font-weight: bolde
 main .section_3 .container .contents:hover h4{color: #fff;}
 main .section_3 .container .contents:hover h2{color: #fff;}
 main .section_3 .container .contents:hover a{color: #fff;}
+            /* start media query */
 @media(min-width:280px) and (max-width:621px){
     main .section_3 .container .contents{padding: 30px;}
     main .section_3 .container .left:hover img{transform:scale(1);}
@@ -208,8 +212,8 @@ main .section_3 .container .contents:hover a{color: #fff;}
 @media(min-width:280px) and (max-width:400px){
     main > .section_3 .container .contents .content{text-align: center;}
 }
-        /* end section_3 */
-        /* start section_4 */
+    /* end section_3 */
+    /* start section_4 */
 main .section_4{width: 100%; padding: 40px 0px;}
 main .section_4 h1,p{text-align: center;color: #000;font-weight: bold;width: 95%;margin: auto;}
 main .section_4 p{margin-top: 15px;}
@@ -220,14 +224,23 @@ main .section_4 .container .icons{display: flex;justify-content: space-evenly;wi
 main .section_4 .container .icons a{color: rgb(37, 37, 37);font-size: 7em;width: 1.4em;}
 main .section_4 .container .icons a:hover{color: var(--color);}
 @keyframes moving{
-    25%{
+    10%{
         margin-left: -156.8px;
     }
-    50%{
+    20%{
         margin-left:-313.6px;
     }
-    75%{
+    30%{
         margin-left:-470.8px;
+    }
+    40%{
+        margin-left:-313.6px;
+    }
+    50%{
+        margin-left:-156.8px;
+    }
+    60%{
+        margin-left:0px;
     }
 }  
 @media(min-width:280px) and (max-width:1000px){
@@ -245,4 +258,28 @@ main .section_4 .container .icons a:hover{color: var(--color);}
         } 
     }  
 }
-        /* end section_4 */
+    /* end section_4 */
+/* end main */
+/* start footer */
+footer{width: 100%;padding: 40px 0px;background-color: rgb(26, 26, 26);}
+    /* start container */
+footer .container{width: 85%;margin: auto;display: flex;justify-content: space-between;flex-wrap: wrap;}
+footer .container .form{min-width: 100px;}
+footer .container .form:last-child p{text-align: left;}
+footer .container .form:last-child p > a:first-child{margin-left: 0px;}
+footer .container .form:last-child p > a{display: inline-block;font-size: 26px;margin: 0px 7px;}
+footer .container .form h3{color: #fff;text-align: left;margin-bottom:40px;}
+footer .container .form a{display: block;text-align: left;margin: 20px 0px;-webkit-text-stroke: 0px black;font-weight:initial;font-size: 17px;}
+footer .container .form a:hover{color: var(--color);}
+footer .container .form a:last-child{margin-bottom: 0px;}
+            /* start media query */
+@media (min-width:280px) and (max-width:890px){
+    footer .container{justify-content: center;}
+    footer .container .form{margin: 25px;}
+    footer .container .form h3{text-align: center;}
+    footer .container .form a{text-align: center;}
+    footer .container .form:last-child a[class="gmail_me"]{text-overflow: ellipsis;overflow: hidden;}
+    footer .container .form:last-child p{text-align: center;}
+}
+/* @media (min-width:280px) and (max-width:372px */
+/* end footer */
