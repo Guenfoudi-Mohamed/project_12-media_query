@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+    <head>
+        <title>project_12-media_query</title>
+        <meta charser="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="products.css" type="text/css">
+        <link rel="stylesheet" href="icon_css/all.min.css" type="text/css"> <!-- for icon -->
+        <link rel="stylesheet" href="icon_css/all.css" type="text/css"> <!-- for icon -->
+    </head>
+    <body>
+        <!-- start input "check_navbar" -->
+        <input type="checkbox" id="check_navbar">
+        <!-- start header_top -->
+        <header class="header_top">
+            <!-- start nav_bar -->
+            <div class="nav_bar">
+                <div class="container">                    
+                    <!-- start logo -->
+                    <svg class="logo" height="100" width="100" >
+                        <text x="50%" y="50%"  text-anchore="midddle" >
+                            BLOGSHOP
+                        </text>
+                    </svg>
+                    <!-- end logo -->
+                    <!-- start list -->
+                    <div class="list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <!-- start li:nth(3) -->
+                        <li><a href="#">Shop&nbsp;<i class="fas fa-angle-down"></i></a>
+                            <div class="contents">
+                                <div class="cont 1">
+                                    <img src="images\img_1.png" alt="shop girl">
+                                </div>
+                                <div class="cont 2">
+                                    <a href="#">Shop Layout</a>
+                                    <a href="#">Shop With Background</a>
+                                    <a href="#">Shop Mini Categories</a>
+                                    <a href="#">Shop Only Categories</a>
+                                    <a href="#">Shop Icon Categories</a>
+                                </div>
+                                <div class="cont 3">
+                                    <a href="#">Filter Layout</a>
+                                    <a href="#">Sidebar</a>
+                                    <a href="#">Filter Default</a>
+                                    <a href="#">Filter Drawer</a>
+                                    <a href="#">Filter Dropdown</a>
+                                </div>
+                                <div class="cont 4">
+                                    <a href="#">Product Layout</a>
+                                    <a href="#">Layout Zoom</a>
+                                    <a href="#">Layout Sticky</a>
+                                    <a href="#">Layout Sticky 2</a>
+                                    <a href="#">Layout Scroll</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">Blog</a></li>
+                        <!-- start li:nth(5) -->
+                        <li><a href="#">Vendors&nbsp;<i class="fas fa-angle-down"></i></a>
+                            <div class="contents">
+                                <a href="#">Vendor Store Listings</a>
+                                <a href="#">Store Details</a>
+                            </div>
+                        </li>
+                        <!-- start li:nth(6) -->
+                        <li><a href="#">Page&nbsp;<i class="fas fa-angle-down"></i></a>
+                            <div class="contents">
+                                <a href="#">About</a>
+                                <a href="#">Contact</a>
+                                <a href="#">Faq</a>
+                                <a href="#">Page 404</a>
+                            </div>
+                        </li>
+                        <li><a href="#" title="Shopping"><i class="fas fa-shopping-bag"></i></a></li>
+                        <li><a href="#" title="Search"><i class="fas fa-search"></i></a></li>
+                    </div>
+                    <!-- end list -->
+                    <!-- start humbrger -->
+                    <label class="humbrger" for="check_navbar">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </label>
+                    <!-- end humbrger -->
+                </div>
+            </div>
+            <!-- end navbar -->
+        </header>   
+         <!-- end header -->
+        <!-- start main -->
+        <main>
+            <!-- start container -->
+            <div class="container">
+                <!-- start aside -->
+                <aside>
+                    <div class="asd_1">
+                        <h1>Category</h1>
+                        <div class="inputs inp_1">
+                            <div class="cont"><input type="checkbox" id="inp1"><label for="inp1">Shoes</label></div>
+                            <div class="cont"><input type="checkbox" id="inp2"><label for="inp2">Bags</label></div>
+                            <div class="cont"><input type="checkbox" id="inp3"><label for="inp3">Accessories</label></div>
+                            <div class="cont"><input type="checkbox" id="inp4"><label for="inp4">Clothings</label></div>
+                        </div>
+                    </div>
+                    <div class="asd_2">
+                        <h1>Brands</h1>
+                        <div class="inputs inp_2">
+                            <div class="cont"><input type="checkbox" id="inp5"><label for="inp5">Gucci</label></div>
+                            <div class="cont"><input type="checkbox" id="inp6"><label for="inp6">Burberry</label></div>
+                            <div class="cont"><input type="checkbox" id="inp7"><label for="inp7">Accessories</label></div>
+                            <div class="cont"><input type="checkbox" id="inp8"><label for="inp8">Valentini</label></div>
+                            <div class="cont"><input type="checkbox" id="inp9"><label for="inp9">Dolce & Gabbana</label></div>
+                            <div class="cont"><input type="checkbox" id="inp10"><label for="inp10">Hogan</label></div>
+                            <div class="cont"><input type="checkbox" id="inp11"><label for="inp11">Moreschi</label></div>
+                            <div class="cont"><input type="checkbox" id="inp12"><label for="inp12">Givenchy</label></div>
+                        </div>
+                    </div>
+                </aside>
+                <!-- end aside -->
+                <!-- start article -->
+                <article>
+                    <!-- start buttons -->
+                    <div class="buttons">
+                        <label for="lbl_1">Sort By</label>
+                        <select id="lbl_1">
+                            <option selected>Name</option>
+                            <option>Price</option>
+                            <option>Relevance</option>
+                            <option>Newness</option>
+                        </select>
+                        <label for="lbl_2">Order</label>
+                        <select id="lbl_2">
+                            <option selected>ASC</option>
+                            <option>DESC</option>
+                        </select>
+                        <input type="button" value="Apply">
+                    </div>
+                    <!-- start section_1 -->
+                    <div class="section_1">
+                        <!-- start forms -->
+                        <div class="forms">
+                            <div class="form" >
+                                <div class="img">
+                                    <div class="back_gr"></div>
+                                    <img src="images\10.jpg" alt="dress-shirt-png">
+                                    <div class="icons">
+                                        <a href="#" title="Search"><i class="fas fa-search"></i></a>
+                                        <a href="#" title="Heart"><i class="far fa-heart"></i></a>
+                                        <a href="#" title="Sliders-h"><i class="fas fa-sliders-h"></i></a>
+                                    </div>
+                                    <a href="product_detail.html" title="Sliders-h"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                                <a href="product_detail.html">
+                                    <h5>Bambi Print Mini Backpack</h5>
+                                    <p><span class="sp_1">150$</span></p>
+                                </a>
+                            </div>
+                            <div class="form">
+                                <div class="img">
+                                    <div class="back_gr"></div>
+                                    <img src="images\7.png" alt="dress-shirt-png">
+                                    <div class="icons">
+                                        <a href="#" title="Search"><i class="fas fa-search"></i></a>
+                                        <a href="#" title="Heart"><i class="far fa-heart"></i></a>
+                                        <a href="#" title="Sliders-h"><i class="fas fa-sliders-h"></i></a>
+                                    </div>
+                                    <a href="#" title="Sliders-h"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                                <a href="product_detail.html">
+                                    <h5>Bambi Print Mini Backpack</h5>
+                                    <p><span class="sp_1">150$</span><span class="sp_2">160$</span></p>
+                                </a>
+                            </div>
+                            <div class="form">
+                                <div class="img">
+                                    <div class="back_gr"></div>
+                                    <img src="images\15.jpg" alt="dress-shirt-png">
+                                    <div class="icons">
+                                        <a href="#" title="Search"><i class="fas fa-search"></i></a>
+                                        <a href="#" title="Heart"><i class="far fa-heart"></i></a>
+                                        <a href="#" title="Sliders-h"><i class="fas fa-sliders-h"></i></a>
+                                    </div>
+                                    <a href="#" title="Sliders-h"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                                <a href="product_detail.html">
+                                    <h5>Bambi Print Mini Backpack</h5>
+                                    <p><span class="sp_1">150$</span></p>
+                                </a>
+                            </div>
+                            <div class="form">
+                                <div class="img">
+                                    <div class="back_gr"></div>
+                                    <img src="images\11.jpg" alt="dress-shirt-png">
+                                    <div class="icons">
+                                        <a href="#" title="Search"><i class="fas fa-search"></i></a>
+                                        <a href="#" title="Heart"><i class="far fa-heart"></i></a>
+                                        <a href="#" title="Sliders-h"><i class="fas fa-sliders-h"></i></a>
+                                    </div>
+                                    <a href="#" title="Sliders-h"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                                <a href="product_detail.html">
+                                    <h5>Bambi Print Mini Backpack</h5>
+                                    <p><span class="sp_1">150$</span><span class="sp_2">160$</span></p>
+                                </a>
+                            </div>
+                            <div class="form">
+                                <div class="img">
+                                    <div class="back_gr"></div>
+                                    <img src="images\5.png" alt="dress-shirt-png">
+                                    <div class="icons">
+                                        <a href="#" title="Search"><i class="fas fa-search"></i></a>
+                                        <a href="#" title="Heart"><i class="far fa-heart"></i></a>
+                                        <a href="#" title="Sliders-h"><i class="fas fa-sliders-h"></i></a>
+                                    </div>
+                                    <a href="#" title="Sliders-h"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                                <a href="product_detail.html">
+                                    <h5>Bambi Print Mini Backpack</h5>
+                                    <p><span class="sp_1">150$</span></p>
+                                </a>
+                            </div>
+                            <div class="form">
+                                <div class="img">
+                                    <div class="back_gr"></div>
+                                    <img src="images\12.jpg" alt="dress-shirt-png">
+                                    <div class="icons">
+                                        <a href="#" title="Search"><i class="fas fa-search"></i></a>
+                                        <a href="#" title="Heart"><i class="far fa-heart"></i></a>
+                                        <a href="#" title="Sliders-h"><i class="fas fa-sliders-h"></i></a>
+                                    </div>
+                                    <a href="#" title="Sliders-h"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                                <a href="product_detail.html">
+                                    <h5>Bambi Print Mini Backpack</h5>
+                                    <p><span class="sp_1">150$</span></p>
+                                </a>
+                            </div>
+                            <div class="form">
+                                <div class="img">
+                                    <div class="back_gr"></div>
+                                    <img src="images\13.jpg" alt="dress-shirt-png">
+                                    <div class="icons">
+                                        <a href="#" title="Search"><i class="fas fa-search"></i></a>
+                                        <a href="#" title="Heart"><i class="far fa-heart"></i></a>
+                                        <a href="#" title="Sliders-h"><i class="fas fa-sliders-h"></i></a>
+                                    </div>
+                                    <a href="#" title="Sliders-h"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                                <a href="product_detail.html">
+                                    <h5>Bambi Print Mini Backpack</h5>
+                                    <p><span class="sp_1">150$</span><span class="sp_2">160$</span></p>
+                                </a>
+                            </div>
+                            <div class="form">
+                                <div class="img">
+                                    <div class="back_gr"></div>
+                                    <img src="images\14.jpg" alt="dress-shirt-png">
+                                    <div class="icons">
+                                        <a href="#" title="Search"><i class="fas fa-search"></i></a>
+                                        <a href="#" title="Heart"><i class="far fa-heart"></i></a>
+                                        <a href="#" title="Sliders-h"><i class="fas fa-sliders-h"></i></a>
+                                    </div>
+                                    <a href="#" title="Sliders-h"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                                <a href="product_detail.html">
+                                    <h5>Bambi Print Mini Backpack</h5>
+                                    <p><span class="sp_1">150$</span><span class="sp_2">160$</span></p>
+                                </a>
+                            </div>
+                            <div class="form">
+                                <div class="img">
+                                <div class="back_gr"></div>
+                                    <img src="images\10.jpg" alt="dress-shirt-png">
+                                    <div class="icons">
+                                        <a href="#" title="Search"><i class="fas fa-search"></i></a>
+                                        <a href="#" title="Heart"><i class="far fa-heart"></i></a>
+                                        <a href="#" title="Sliders-h"><i class="fas fa-sliders-h"></i></a>
+                                    </div>
+                                    <a href="#" title="Sliders-h"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                                <a href="product_detail.html">
+                                    <h5>Bambi Print Mini Backpack</h5>
+                                    <p><span class="sp_1">150$</span></p>
+                                </a>
+                            </div>
+                            <div class="form">
+                                <div class="img">
+                                    <div class="back_gr"></div>
+                                    <img src="images\10.jpg" alt="dress-shirt-png">
+                                    <div class="icons">
+                                        <a href="#" title="Search"><i class="fas fa-search"></i></a>
+                                        <a href="#" title="Heart"><i class="far fa-heart"></i></a>
+                                        <a href="#" title="Sliders-h"><i class="fas fa-sliders-h"></i></a>
+                                    </div>
+                                    <a href="#" title="Sliders-h"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                                <a href="product_detail.html">
+                                    <h5>Bambi Print Mini Backpack</h5>
+                                    <p><span class="sp_1">150$</span></p>
+                                </a>
+                            </div>
+                            <div class="form">
+                                <div class="img">
+                                    <div class="back_gr"></div>
+                                    <img src="images\7.png" alt="dress-shirt-png">
+                                    <div class="icons">
+                                        <a href="#" title="Search"><i class="fas fa-search"></i></a>
+                                        <a href="#" title="Heart"><i class="far fa-heart"></i></a>
+                                        <a href="#" title="Sliders-h"><i class="fas fa-sliders-h"></i></a>
+                                    </div>
+                                    <a href="#" title="Sliders-h"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                                <a href="product_detail.html">
+                                    <h5>Bambi Print Mini Backpack</h5>
+                                    <p><span class="sp_1">150$</span><span class="sp_2">160$</span></p>
+                                </a>
+                            </div>
+                            <div class="form">
+                                <div class="img">
+                                    <div class="back_gr"></div>
+                                    <img src="images\15.jpg" alt="dress-shirt-png">
+                                    <div class="icons">
+                                        <a href="#" title="Search"><i class="fas fa-search"></i></a>
+                                        <a href="#" title="Heart"><i class="far fa-heart"></i></a>
+                                        <a href="#" title="Sliders-h"><i class="fas fa-sliders-h"></i></a>
+                                    </div>
+                                    <a href="#" title="Sliders-h"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                                <a href="product_detail.html">
+                                    <h5>Bambi Print Mini Backpack</h5>
+                                    <p><span class="sp_1">150$</span></p>
+                                </a>
+                            </div>
+                            <div class="form">
+                                <div class="img">
+                                    <div class="back_gr"></div>
+                                    <img src="images\11.jpg" alt="dress-shirt-png">
+                                    <div class="icons">
+                                        <a href="#" title="Search"><i class="fas fa-search"></i></a>
+                                        <a href="#" title="Heart"><i class="far fa-heart"></i></a>
+                                        <a href="#" title="Sliders-h"><i class="fas fa-sliders-h"></i></a>
+                                    </div>
+                                    <a href="#" title="Sliders-h"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                                <a href="product_detail.html">
+                                    <h5>Bambi Print Mini Backpack</h5>
+                                    <p><span class="sp_1">150$</span><span class="sp_2">160$</span></p>
+                                </a>
+                            </div>
+                            <div class="form">
+                                <div class="img">
+                                    <div class="back_gr"></div>
+                                    <img src="images\5.png" alt="dress-shirt-png">
+                                    <div class="icons">
+                                        <a href="#" title="Search"><i class="fas fa-search"></i></a>
+                                        <a href="#" title="Heart"><i class="far fa-heart"></i></a>
+                                        <a href="#" title="Sliders-h"><i class="fas fa-sliders-h"></i></a>
+                                        </div>
+                                    <a href="#" title="Sliders-h"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                                <a href="product_detail.html">
+                                    <h5>Bambi Print Mini Backpack</h5>
+                                    <p><span class="sp_1">150$</span></p>
+                                </a>
+                            </div>
+                            <div class="form">
+                                <div class="img">
+                                    <div class="back_gr"></div>
+                                    <img src="images\12.jpg" alt="dress-shirt-png">
+                                    <div class="icons">
+                                        <a href="#" title="Search"><i class="fas fa-search"></i></a>
+                                        <a href="#" title="Heart"><i class="far fa-heart"></i></a>
+                                        <a href="#" title="Sliders-h"><i class="fas fa-sliders-h"></i></a>
+                                    </div>
+                                    <a href="#" title="Sliders-h"><i class="fas fa-shopping-cart"></i></a>
+                                </div>
+                                <a href="product_detail.html">
+                                    <h5>Bambi Print Mini Backpack</h5>
+                                    <p><span class="sp_1">150$</span></p>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- end forms -->
+                        <div class="page_number">
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">>></a>
+                            <a href="#">Last >></a>
+                        </div>
+                    </div>
+                    <!-- end container -->
+                </article>
+                <!-- end article -->
+            </div>
+        </main>
+        <!-- end main -->
+        <!-- start footer -->
+        <footer>
+            <!-- start container -->
+            <div class="container">
+                <div class="form">
+                    <h3>EXTRAS</h3>
+                    <a href="#">Brands</a>
+                    <a href="#">Gift Certificates</a>
+                    <a href="#">Affilate</a>
+                    <a href="#">Specials</a>
+                    <a href="#">Site Map</a>
+                </div>
+                <div class="form">
+                    <h3>INFORMATION</h3>
+                    <a href="#">About Us</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Site Map</a>
+                </div>
+                <div class="form">
+                    <h3>MY ACCOUNT</h3>
+                    <a href="#">My Account</a>
+                    <a href="#">Order Hestory</a>
+                    <a href="#">Wish List</a>
+                    <a href="#">Newsletter</a>
+                    <a href="#">returns</a>
+                </div>
+                <div class="form">
+                    <h3>CONTACT US</h3>
+                    <a href="#" title="Address"><i class="fas fa-map-marker-alt"></i>&nbsp;Ny Account</a>
+                    <a title="addres">7131 Dreamville, USA</a>
+                    <a href="mailto:mohamed.guenfoudi@hotmail.com" title="Gmail : mohamed.guenfoudi@hotmail.com" class="gmail_me"><i class="far fa-envelope"></i>&nbsp;mohamed.guenfoudi@hotmail.com</a>
+                    <a href="tel:+4733378901" title="phone"><i class="fas fa-phone"></i>&nbsp;+47 333 78 901</a> 
+                    <p><a href="#" title="mastercard"><i class="fab fa-cc-mastercard"></i></a><a href="#" title="paypal"><i class="fab fa-cc-paypal"></i></a><a href="#" title="amex"><i class="fab fa-cc-amex"></i></a><a href="#" title="visa"><i class="fab fa-cc-visa"></i></a><a href="#" title="discover"><i class="fab fa-cc-discover"></i></a></p>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+    </body>
+</html>
