@@ -44,7 +44,7 @@ body > input[id="check_navbar"]:checked + .header_top .nav_bar .container > .lis
 .header_top .nav_bar .container > .list > li:nth-child(6) > .contents a:hover{color:var(--color);}
             /* li:nth-child(7) */
 .header_top .nav_bar .container > .list > li:nth-child(7) a{position: relative;}            
-.header_top .nav_bar .container > .list > li:nth-child(7) a::after{content: '0';padding: 2px;background-color: var(--color);color: #fff;position: relative;left: 2px;top: -12px;border-radius: 8px;-webkit-text-stroke: 0.6px black;font-size: 16px;display: inline-block;}
+.header_top .nav_bar .container > .list > li:nth-child(7) a::after{content: '1';padding: 2px;background-color: var(--color);color: #fff;position: relative;left: 2px;top: -12px;border-radius: 8px;-webkit-text-stroke: 0.6px black;font-size: 16px;display: inline-block;}
             /* li last-child */
 .header_top .nav_bar > .list > li:last-child a{margin-right:0px;padding-right:0px;}
             /* animation >> logo */
