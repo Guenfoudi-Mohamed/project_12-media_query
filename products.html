@@ -11,14 +11,27 @@
     <body>
         <!-- start input "check_navbar" -->
         <input type="checkbox" id="check_navbar">
+        <input type="checkbox" id="check_pop_up">
+        <!-- start pop_up -->
+        <div class="area">
+            <div class="pop_up">
+                <h3>Search</h3>
+                <label for="check_pop_up" name="s1">
+                    <a><i class="fas fa-times"></i></a>
+                </label>
+                <form>
+                    <input type="search" placeholder="Search Now !"><a href="#" title="search"><i class="fas fa-search"></i></a>
+                </form>
+            </div>
+        </div>
         <!-- start header_top -->
         <header class="header_top">
             <!-- start nav_bar -->
             <div class="nav_bar">
                 <div class="container">                    
-                    <!-- start logo -->
-                    <svg class="logo" height="100" width="100" >
-                        <text x="50%" y="50%"  text-anchore="midddle" >
+                    <!-- satrt logo -->
+                    <svg class="logo" height="100" width="100">
+                        <text x="50%" y="50%"  text-anchore="midddle">
                             BLOGSHOP
                         </text>
                     </svg>
@@ -26,7 +39,7 @@
                     <!-- start list -->
                     <div class="list">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
+                        <li><a href="Products.html">Products</a></li>
                         <!-- start li:nth(3) -->
                         <li><a href="#">Shop&nbsp;<i class="fas fa-angle-down"></i></a>
                             <div class="contents">
@@ -74,21 +87,26 @@
                             </div>
                         </li>
                         <li><a href="#" title="Shopping"><i class="fas fa-shopping-bag"></i></a></li>
-                        <li><a href="#" title="Search"><i class="fas fa-search"></i></a></li>
+                         <!-- start last child li -->
+                            <!-- start icon_search -->
+                        <li>
+                            <label for="check_pop_up" name="s1">
+                                <a>                                                 <!-- f label > a <href="#" > <=<=<=<=<= no use href="" !!! -->
+                                    <i class="fas fa-search"></i>
+                                </a>
+                            </label>
+                        </li>
                     </div>
-                    <!-- end list -->
                     <!-- start humbrger -->
                     <label class="humbrger" for="check_navbar">
                         <div class="bar"></div>
                         <div class="bar"></div>
                         <div class="bar"></div>
                     </label>
-                    <!-- end humbrger -->
                 </div>
             </div>
-            <!-- end navbar -->
-        </header>   
-         <!-- end header -->
+        </header>  
+        <!-- end header -->
         <!-- start main -->
         <main>
             <!-- start container -->
